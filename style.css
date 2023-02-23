@@ -1,0 +1,211 @@
+
+
+/* about */
+span{
+    font-weight: bold;
+}
+
+
+/* education */
+.education{
+    padding-left: 20px;
+}
+.edu-section{
+    border-left: 1px solid black;
+    margin-bottom: 20px;
+}
+.edu-circle{
+    position: relative;
+
+}
+.edu-circle:after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    left: 0;
+    top: 5px;
+    margin-left: -17px;
+
+}
+#my-download-btn{
+    color: white;
+    text-decoration: none;
+}
+#about-one{
+    position: relative;
+    top: -20px;
+}
+#about-two{
+    position: relative;
+    top: -10px;
+}
+#about-three{
+    position: relative;
+    top: -75px;
+    
+}
+#about-five{
+    position: relative;
+    top: -20px;
+}
+#gallery-center{
+    align-items: center;
+
+}
+#btn-gap{
+  margin-left: 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    position: relative;
+}
+form input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+}
+form input:nth-child(1){
+   width: 48%;
+   
+}
+form input:nth-child(2){
+   position: absolute;
+   right: 12px;
+   width: 48%;
+}
+textarea{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+#submit-btn{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+button{
+    padding: 0.5rem 4rem;
+    cursor: pointer;
+}
+iframe{
+   width: 30vw;
+   height: 20vw; 
+   padding: 1rem;
+  
+}
+#special-border{
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.53);
+-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.53);
+}
+.card a{
+    text-decoration: none;
+}
+
+/* card body service  */
+#hover-card:hover{
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.53);
+-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.53);
+}
+
+/* footer  */
+footer .footer-area{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 1rem 0;
+    background-color: #f1f1f1;
+}
+footer{
+    padding-top: 1rem;
+}
+footer .footer-area a{
+    color: black;
+}
+footer .footer-area p{
+    margin-top: 1rem;
+}
+footer .footer-area svg{
+    margin: 0.5rem;
+    background-color: white;
+   padding: 0.3rem;
+   border-radius: 48%;
+   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.33);
+   -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.33);
+   -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.33);
+
+}
+
+/* custom scroll  */
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #312eff #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #312eff;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+
+/* responsive buttons in my gallery  */
+@media (min-width:778px){
+    #gallery-center-max{
+       text-align: center;
+       
+    }
+}
+@media (max-width:375px){
+    #gallery-center-max{
+
+       text-align: center;
+       display: flex;
+       justify-content: center;
+    }
+    form input{
+        padding: 0.1rem;
+        margin-bottom: 1rem;
+    }
+    button{
+        padding: 0.1rem 0.5rem;
+        border: none;
+        border-radius: 5px ;
+    }
+    iframe{
+        width: 77vw;
+        height: 50vw; 
+        padding: 1rem;
+     }
+    footer .footer-area svg{
+    padding: 0.6rem;
+    height: 40px;
+    width: 40px;
+    }
+    
+}
+
